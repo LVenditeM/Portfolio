@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portifolio</title>
 </head>
@@ -40,7 +41,6 @@
             </button>
         </nav>
     </header>
-
     <div id="menu-overlay" class="menu-overlay nav-mobile">
         <div class="menu-content">
             <a class="nav-item" href="#sobre">Sobre</a>
@@ -48,10 +48,115 @@
             <a class="nav-item" href="#contato">Contato</a>
         </div>
     </div>
-    
 
+    <section class="container" id="projetos">
+        <div class="swiper projetos-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide projetos-slide card card card">
+                    <div class="projetos-slide-img">
+                        <img src="assets/imgs/portifolio.png" alt="projetos">
+                    </div>
+                    <div class="projetos-slide-content">
+                        <div class="projetos-slide-content-bottom">''
+                            <h2 class="projetos-name">
+                                Portifolio
+                            </h2>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn-hidden" target="_blank" target="_blank"
+                                href="https://lvenditem.github.io/Portifolio/"><img src="assets/imgs/eye.png"
+                                    class="button-icon" alt=""></a>
+                            <a class="btn-hidden" target="_blank" target="_blank"
+                                href="https://github.com/LVenditeM/Portifolio"><img src="assets/imgs/repository.png"
+                                    class="button-icon" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide projetos-slide card card card">
+                    <div class="projetos-slide-img">
+                        <img src="assets/imgs/tictactoe.png" alt="projetos">
+                    </div>
+                    <div class="projetos-slide-content">
+                        <div class="projetos-slide-content-bottom">
+                            <h2 class="projetos-name">
+                                Tic Tac Toe
+                            </h2>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn-hidden" target="_blank" href="https://lvenditem.github.io/TicTacToe/"><img
+                                    src="assets/imgs/eye.png" class="button-icon" alt=""></a>
+                            <a class="btn-hidden" target="_blank" href="https://github.com/LVenditeM/tictactoe"><img
+                                    src="assets/imgs/repository.png" class="button-icon" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide projetos-slide card card card">
+                    <div class="projetos-slide-img">
+                        <img src="assets/imgs/auto-pokedex.png" alt="projetos">
+                    </div>
+                    <div class="projetos-slide-content">
+                        <div class="projetos-slide-content-bottom">
+                            <h2 class="projetos-name">
+                                Auto Pokedex
+                            </h2>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn-hidden" target="_blank" target="_blank"
+                                href="https://lvenditem.github.io/Auto-Pokedex/"><img src="assets/imgs/eye.png"
+                                    class="button-icon" alt=""></a>
+                            <a class="btn-hidden" target="_blank" target="_blank"
+                                href="https://github.com/LVenditeM/auto-pokedex"><img src="assets/imgs/repository.png"
+                                    class="button-icon" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide projetos-slide card card card">
+                    <div class="projetos-slide-img">
+                        <img src="assets/imgs/manual-pokedex.png" alt="projetos">
+                    </div>
+                    <div class="projetos-slide-content">
+                        <div class="projetos-slide-content-bottom">
+                            <h2 class="projetos-name">
+                                Manual Pokedex
+                            </h2>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn-hidden" target="_blank" target="_blank" target="_blank"
+                                href="https://lvenditem.github.io/Manual-Pokedex/"><img src="assets/imgs/eye.png"
+                                    class="button-icon" alt=""></a>
+                            <a class="btn-hidden" target="_blank" target="_blank"
+                                href="https://github.com/LVenditeM/manual-pokedex"><img src="assets/imgs/repository.png"
+                                    class="button-icon" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projetos-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito por Vendite com ❤</p>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

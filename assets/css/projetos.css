@@ -1,0 +1,76 @@
+@import url('slider.css');
+
+#projetos .card:hover {
+    background-color: rgb(98, 98, 98);
+    box-shadow: 2px 2px 4px grey;
+}
+
+#projetos .card:hover img {
+    opacity: 40%;
+}
+
+.card:hover .btn-hidden {
+    display: block;
+}
+
+#projetos .card {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: #000000 2px solid;
+}
+
+body.dark-mode #projetos .card {
+    border: #61ebd0 2px solid;
+    background-color: gray;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+}
+
+.button-icon {
+    width: 30px;
+}
+
+.btn-hidden {
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    border: 1px solid black;
+    cursor: pointer;
+    float: right;
+    transform: translate(-50%, -50%);
+}
+
+.btn-hidden:hover {
+    background-color: #FFC700;
+}
+
+body.dark-mode .btn-hidden:hover {
+    background-color: #1A535C;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .btn-hidden {
+        display: block;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+}
