@@ -1,0 +1,23 @@
+@import url('nav.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 120vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(135deg, #F7ECD2, #FFC700);
+    transition: background-color 0.5s ease-in-out;
+    color: black;
+}
+
+body.dark-mode {
+    background-image: linear-gradient(135deg, #0c1c2c, #347e6f);
+    color: #61ebd0;
+}
+
