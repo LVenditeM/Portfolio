@@ -1,0 +1,156 @@
+.about-icon {
+    width: 45px;
+    margin-top: 15px;
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.intro-text h3 {
+    font-size: 28px;
+    line-height: 1;
+    margin: 0;
+}
+
+.intro-text h1 {
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 0.90;
+    margin: 0;
+}
+
+.me {
+    width: 225px;
+    opacity: 0.7;
+}
+
+.about-icon:hover {
+    transform: scale(1.20);
+}
+
+@media (max-width: 1440px) {
+    .about-icon {
+        width: 40px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .intro-text h3 {
+        font-size: 25px;
+        line-height: 1;
+        margin: 0;
+    }
+    
+    .intro-text h1 {
+        font-size: 75px;
+        font-weight: bold;
+        line-height: 0.90;
+        margin: 0;
+    }
+    
+    .me {
+        width: 175px;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-icon {
+        width: 35px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .intro-text h3 {
+        font-size: 18px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .intro-text h1 {
+        font-size: 55px;
+        font-weight: bold;
+        line-height: 0.90;
+        margin: 0;
+    }
+
+    .me {
+        width: 135px;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-icon {
+        width: 25px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .intro-text h3 {
+        font-size: 14px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .intro-text h1 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.90;
+        margin: 0;
+    }
+
+    .me {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    .about-icon {
+        width: 15px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .intro-text h3 {
+        font-size: 8px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .intro-text h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.90;
+        margin: 0;
+    }
+
+    .me {
+        display: none;
+    }
+}

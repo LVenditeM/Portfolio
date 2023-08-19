@@ -1,8 +1,8 @@
 const body = document.querySelector("body");
 const darkMode = localStorage.getItem("darkMode");
-// const linkedin = document.getElementById("linkedin");
-// const curriculo = document.getElementById("curriculo");
-// const github = document.getElementById("github");
+const linkedin = document.getElementById("linkedin");
+const curriculo = document.getElementById("curriculo");
+const github = document.getElementById("github");
 // const clipboard = document.getElementById("clipboard");
 // const mail = document.getElementById("mail");
 
@@ -13,9 +13,9 @@ const nav = document.getElementById('nav');
 function darkmode() {
     if (body.classList.contains("dark-mode")) {
         body.classList.remove("dark-mode");
-        // linkedin.src = "./assets/imgs/light-linkedin.svg";
-        // github.src = "./assets/imgs/light-github.svg";
-        // curriculo.src = "./assets/imgs/light-curriculo.svg";
+        linkedin.src = "./assets/imgs/light-linkedin.svg";
+        github.src = "./assets/imgs/light-github.svg";
+        curriculo.src = "./assets/imgs/light-curriculo.svg";
         theme.src = "./assets/imgs/light-theme.svg";
         menu.src = "./assets/imgs/light-menu.svg";
         // clipboard.src = "./assets/imgs/light-clipboard.svg";
@@ -23,9 +23,9 @@ function darkmode() {
         localStorage.setItem("darkMode", "false"); // Armazena o estado do modo como falso
     } else {
         body.classList.add("dark-mode");
-        // linkedin.src = "./assets/imgs/dark-linkedin.svg";
-        // github.src = "./assets/imgs/dark-github.svg";
-        // curriculo.src = "./assets/imgs/dark-curriculo.svg";
+        linkedin.src = "./assets/imgs/dark-linkedin.svg";
+        github.src = "./assets/imgs/dark-github.svg";
+        curriculo.src = "./assets/imgs/dark-curriculo.svg";
         theme.src = "./assets/imgs/dark-theme.svg";
         menu.src = "./assets/imgs/dark-menu.svg";
         // clipboard.src = "./assets/imgs/dark-clipboard.svg";

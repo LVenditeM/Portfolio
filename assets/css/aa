@@ -1,0 +1,105 @@
+.contact {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: end;
+}
+
+video {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.video-container {
+    position: relative;
+}
+
+body.dark-mode video {
+    border: 2px solid #61ebd0;
+}
+
+
+
+@media (max-width: 620px) {
+
+    .card-overlay {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 10%;
+        right: 20%;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+
+    }
+    .card {
+        background-color: #00000082;
+        padding: 20px;
+        width: 100%;
+    }
+    .form-button {
+        margin-top: 5px;
+        width: 100%;
+        background-color: #e3c00e;
+        cursor: pointer;
+        float: none;
+    }
+
+    .text-overlay {
+        display: none;
+    }
+    .email-overlay {
+        display: none;
+    }
+
+}
+@media (max-width: 300px) {
+
+    .card-overlay {
+        position: inherit;
+        to
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+        font-family: Arial, sans-serif;
+        z-index: 3;
+    }
+    .card {
+        background-color: #00000082;
+        padding: 0px;
+        width: 100%;
+    }
+    .form-button {
+        margin-top: 5px;
+        width: 100%;
+        background-color: #e3c00e;
+        cursor: pointer;
+        float: none;
+    }
+
+    .text-overlay {
+        display: none;
+    }
+    .email-overlay {
+        display: none;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 2px;
+        margin-top: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        font-size: 8px;
+    }
+}

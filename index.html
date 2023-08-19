@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="nav-sobre">
         <nav id="nav">
             <div id="logo">
                 <a href="https://github.com/LVenditeM/Bagres-League">
@@ -48,9 +48,32 @@
             <a class="nav-item" href="#contato">Contato</a>
         </div>
     </div>
+    <section class="container" id="sobre">
+        <div class="intro-text">
+            <h3>Oi, eu sou o Lucas</h3>
+            <div class="about-text">
+                <h1>FRONTEND</h1>
+                <a href="https://drive.google.com/file/d/1EvLaz5kdwqEdy4A6uhWyrQh--_x7Wuf2/view?usp=sharing"
+                    target="_blank"><img src="./assets/imgs/light-curriculo.svg" alt="Curriculo" class="about-icon"
+                        id="curriculo"></a>
+                <a href="https://www.linkedin.com/in/lvenditem/" target="_blank"><img
+                        src="./assets/imgs/light-linkedin.svg" alt="Linkedin" class="about-icon" id="linkedin"></a>
+                <a href="https://github.com/LVenditeM/LVenditeM" target="_blank"><img
+                        src="./assets/imgs/light-github.svg" alt="Github" class="about-icon" id="github"></a>
+            </div>
+            <h1><span id="typing-text"></span></h1>
+            <h3>19 anos e apaixonado por tecnologia,<br> já contribuí em alguns projetos como freelancer.</h3>
+
+        </div>
+        <img style="padding-left: 20px;" src="./assets/imgs/me.png" alt="me" class="me">
+    </section>
 
     <section class="container" id="projetos">
+
         <div class="swiper projetos-slider">
+            <div class="titulo-projetos">
+                <h1>Projetos</h1>
+            </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide projetos-slide card card card">
                     <div class="projetos-slide-img">
@@ -146,10 +169,35 @@
         </div>
     </section>
 
+    <section class="container" id="contato">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="assets/imgs/dark.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <div class="video-overlay">
+                <div class="title-overlay">Contato</div>
+            </div>
+    </section>
+
     <footer>
         <p>Feito por Vendite com ❤</p>
     </footer>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const typedOptions = {
+                strings: ["DEV.", "DEVELOPER."],
+                typeSpeed: 50,
+                backSpeed: 50,
+                backDelay: 2000,
+                loop: true,
+            };
+
+            const typed = new Typed("#typing-text", typedOptions);
+        });
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

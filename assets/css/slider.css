@@ -65,15 +65,15 @@ body {
 }
 
 #projetos .projetos-slider {
-    height: 52rem;
-    padding: 2rem 0;
+    height: 60rem;
+    padding: 6.5rem 0;
     position: relative;
 
 }
 
 @media (max-width:500px) {
     #projetos .projetos-slider {
-        height: 45rem;
+        height: 55rem;
     }
 }
 

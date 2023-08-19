@@ -13,6 +13,12 @@
     display: block;
 }
 
+.titulo-projetos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #projetos .card {
     background-color: whitesmoke;
     border-radius: 15px;

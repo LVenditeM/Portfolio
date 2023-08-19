@@ -28,15 +28,26 @@ body.dark-mode nav.scrolling {
     align-items: flex-end;
     text-align: center;
     min-height: 100%;
+
 }
 
-.nav-item {
+.nav-desktop .nav-item {
     margin-top: -40px;
     display: flex;
     justify-content: center;
     width: 100px;
     font-weight: bold;
     padding-top: 75px;
+    color: black;
+}
+
+.nav-mobile .nav-item {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
     color: black;
 }
 

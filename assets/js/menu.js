@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("click", function () {
         menuOverlay.classList.toggle("active");
-        nav.classList.toggle("scrolling");
+        nav.classList.add("scrolling");
     });
 
     // Fecha o menu quando o usuário clica fora dele
