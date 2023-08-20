@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header id="nav-sobre">
+    <header>
         <nav id="nav">
             <div id="logo">
                 <a href="https://github.com/LVenditeM/Bagres-League">
@@ -48,6 +48,7 @@
             <a class="nav-item" href="#contato">Contato</a>
         </div>
     </div>
+
     <section class="container" id="sobre">
         <div class="intro-text">
             <h3>Oi, eu sou o Lucas</h3>
@@ -62,12 +63,11 @@
                         src="./assets/imgs/light-github.svg" alt="Github" class="about-icon" id="github"></a>
             </div>
             <h1><span id="typing-text"></span></h1>
-            <h3>19 anos e apaixonado por tecnologia,<br> já contribuí em alguns projetos como freelancer.</h3>
+            <h3>19 anos e apaixonado por tecnologia, <br> em busca de uma primeira oportunidade,<br> já contribuí em alguns projetos como freelancer.</h3>
 
         </div>
         <img style="padding-left: 20px;" src="./assets/imgs/me.png" alt="me" class="me">
     </section>
-
     <section class="container" id="projetos">
 
         <div class="swiper projetos-slider">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide projetos-slide card card card">
+                <div class="swiper-slide projetos-slide card">
                     <div class="projetos-slide-img">
                         <img src="assets/imgs/tictactoe.png" alt="projetos">
                     </div>
@@ -170,16 +170,80 @@
     </section>
 
     <section class="container" id="contato">
-        <div class="video-container">
+        <div class="video-container desktop">
             <video autoplay loop muted>
                 <source src="assets/imgs/dark.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
             <div class="video-overlay">
-                <div class="title-overlay">Contato</div>
-            </div>
-    </section>
+                <div class="title-overlay">
+                    <h1 class="text-center">Contato</h1>
+                </div>
+                <div class="text-overlay">
 
+                    <h1>Abra as portas para novas <br>oportunidades.</h1>
+                </div>
+                <div class="email-overlay">
+                    <div class="box"> <img src="assets/imgs/light-mail.svg" id="mail" class="icon"></div>
+                    <div class="email">
+                        <p id="conteudo">lvenditem@gmail.com</p>
+                    </div>
+                    <button id="botao-copiar" class="copy box" onclick="copiarTexto()"><img
+                            src="assets/imgs/light-clipboard.svg" id="clipboard" class="icon"></button>
+                </div>
+                <div class="card-overlay contact">
+                    <form action="/enviar_contato" method="POST" class="contact-form">
+                        <div class="card">
+                            <div class="flex-labels">
+                                <label for="nome" id="labelname">Nome</label>
+                                <label for="email" id="labelemail">Email</label>
+                            </div>
+                            <div class="flex-inputs">
+                                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <textarea id="mensagem" name="mensagem" rows="8" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <button class="form-button" type="submit" value="Enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-overlay mobile">
+
+            <div class="card-overlay mobile">
+
+                <form action="/enviar_contato" method="POST" class="mobile contact-form">
+                    <div class="card">
+                        <div class="title-overlay">
+                            <h1>Contato</h1>
+                        </div>
+
+                        <div class="flex-inputs">
+                            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <button class="form-button" type="submit" value="Enviar">Enviar</button>
+                </form>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+    <div class="floating-button mobile">
+        <div class="button-content">
+            lvenditem@gmail.com
+        </div>
+        <button id="botao-copiar" class="copy box" onclick="copiarTexto()"><img src="assets/imgs/light-clipboard.svg"
+                id="clipboard" class="icon"></button>
+    </div>
+    </div>
     <footer>
         <p>Feito por Vendite com ❤</p>
     </footer>
@@ -203,6 +267,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/copy.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>

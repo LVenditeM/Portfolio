@@ -6,14 +6,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("click", function () {
         menuOverlay.classList.toggle("active");
-        nav.classList.add("scrolling");
+        if (window.scrollY <= 100 && !menuOverlay.classList.contains("active")) {
+            nav.classList.remove("scrolling");
+        }
+        else {
+            nav.classList.add("scrolling");
+        }
     });
 
     // Fecha o menu quando o usuário clica fora dele
     body.addEventListener("click", function (event) {
         if (!menuOverlay.contains(event.target) && !menuToggle.contains(event.target)) {
             menuOverlay.classList.remove("active");
-            nav.classList.remove("scrolling");
+            if (window.scrollY <= 100) {
+                nav.classList.remove("scrolling");
+            }
         }
     });
 });

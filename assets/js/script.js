@@ -1,16 +1,18 @@
 const body = document.querySelector("body");
 const darkMode = localStorage.getItem("darkMode");
-const linkedin = document.getElementById("linkedin");
-const curriculo = document.getElementById("curriculo");
-const github = document.getElementById("github");
-// const clipboard = document.getElementById("clipboard");
-// const mail = document.getElementById("mail");
 
-const theme = document.getElementsByClassName("theme-img")[0];
-const menu = document.getElementsByClassName("menu-icon")[0];
-const nav = document.getElementById('nav');
+
+
 
 function darkmode() {
+
+    const linkedin = document.getElementById("linkedin");
+    const curriculo = document.getElementById("curriculo");
+    const github = document.getElementById("github");
+    const theme = document.getElementsByClassName("theme-img")[0];
+    const menu = document.getElementsByClassName("menu-icon")[0];
+    // const clipboard = document.getElementById("clipboard");
+    // const mail = document.getElementById("mail");
     if (body.classList.contains("dark-mode")) {
         body.classList.remove("dark-mode");
         linkedin.src = "./assets/imgs/light-linkedin.svg";
@@ -35,10 +37,16 @@ function darkmode() {
 }
 
 function handleScroll() {
+    const nav = document.getElementById('nav');
+    const menuOverlay = document.getElementById("menu-overlay");
     if (window.scrollY > 50) {
         nav.classList.add('scrolling');
 
-    } else {
+    } else if (menuOverlay.classList.contains("active")) {
+        nav.classList.add('scrolling');
+    }
+    
+    else {
         nav.classList.remove('scrolling');
 
     }

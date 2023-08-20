@@ -29,7 +29,7 @@ body.dark-mode {
 
 #sobre {
     margin: 10% auto;
-    min-height: 75vh;
+    min-height: 50vh;
     width: 84%;
     display: flex;
     justify-content: center;

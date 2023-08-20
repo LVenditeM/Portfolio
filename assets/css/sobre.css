@@ -1,11 +1,11 @@
 .about-icon {
     width: 45px;
-    margin-top: 15px;
 }
 
 .about-text {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
 }
 
@@ -18,13 +18,16 @@
 .intro-text h1 {
     font-size: 75px;
     font-weight: bold;
-    line-height: 0.90;
+    line-height: 0.9;
     margin: 0;
 }
 
 .me {
+    padding-left: 20px;
     width: 225px;
     opacity: 0.7;
+    justify-self: flex-end;
+    align-self: center;
 }
 
 .about-icon:hover {
@@ -47,20 +50,20 @@
         flex-wrap: wrap;
         gap: 20px;
     }
-    
+
     .intro-text h3 {
         font-size: 25px;
         line-height: 1;
         margin: 0;
     }
-    
+
     .intro-text h1 {
         font-size: 75px;
         font-weight: bold;
         line-height: 0.90;
         margin: 0;
     }
-    
+
     .me {
         width: 175px;
         opacity: 0.7;
@@ -97,9 +100,9 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .about-icon {
-        width: 25px;
+        width: 20px;
     }
 
     .about-text {
@@ -109,13 +112,13 @@
     }
 
     .intro-text h3 {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1;
         margin: 0;
     }
 
     .intro-text h1 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         line-height: 0.90;
         margin: 0;
@@ -134,7 +137,7 @@
     .about-text {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 5px;
     }
 
     .intro-text h3 {
